@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SDMIT</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="campus">Campus\nGuide</string>
+    <string name="todo">TODO</string>
+    <string name="exit">Exit</string>
+    <string name="ground_floor">Ground Floor</string>
+    <string name="_1st_floor">1st Floor</string>
+    <string name="_2nd_floor">2nd Floor</string>
+    <string name="_3rd_floor">3rd Floor</string>
+    <string name="_4th_floor">4th Floor</string>
+
+</resources>
