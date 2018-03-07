@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SDMIT</string>
+    <string name="app_name">Campus Guide</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -13,5 +13,7 @@
     <string name="_2nd_floor">2nd Floor</string>
     <string name="_3rd_floor">3rd Floor</string>
     <string name="_4th_floor">4th Floor</string>
+    <string name="backdrop_title">SDMIT</string>
+    <string name="backdrop_subtitle">Sri Dharmasthala Manjunatheshwara</string>
 
 </resources>
