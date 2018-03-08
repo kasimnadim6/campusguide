@@ -13,11 +13,6 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-/**
- * Created by kasim on 3/3/18.
- */
-
-
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private Context mContext;
@@ -25,17 +20,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title;
-        public ImageView thumbnail;
+        private ImageView thumbnail;
 
-        public MyViewHolder(View view) {
+        private MyViewHolder(View view) {
             super(view);
-            title = (TextView) view.findViewById(R.id.title);
-            thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
+            title = view.findViewById(R.id.title);
+            thumbnail = view.findViewById(R.id.thumbnail);
         }
     }
 
-
-    public MyAdapter(Context mContext, List<Card> list) {
+    MyAdapter(Context mContext, List<Card> list) {
         this.mContext = mContext;
         this.list = list;
     }
@@ -54,8 +48,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         holder.title.setText(album.getName());
 
-        // loading album cover using Glide library
-        Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
+        holder.thumbnail.setImageResource(album.getThumbnail());
+        // loading album dropcover using Glide library
+        //Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
 
         holder.thumbnail.setOnClickListener(new View.OnClickListener() {
             @Override

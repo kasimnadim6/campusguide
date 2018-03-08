@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="campus">Campus\nGuide</string>
+    <string name="campus">CAMPUS GUIDE</string>
     <string name="todo">TODO</string>
     <string name="exit">Exit</string>
     <string name="ground_floor">Ground Floor</string>
@@ -15,5 +15,6 @@
     <string name="_4th_floor">4th Floor</string>
     <string name="backdrop_title">SDMIT</string>
     <string name="backdrop_subtitle">Sri Dharmasthala Manjunatheshwara</string>
+    <string name="loading">Loading...</string>
 
 </resources>

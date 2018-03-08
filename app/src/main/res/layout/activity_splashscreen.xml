@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@color/bg"
+    android:background="@drawable/back"
     tools:context="com.example.kasim.campusguide.splashscreen">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:contentDescription="@string/todo"
-        app:srcCompat="@mipmap/sdm" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp"
+            android:gravity="center"
+            android:text="@string/campus"
+            android:textColor="@color/bg"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:gravity="center"
+            android:text="@string/loading"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:fadeScrollbars="false"
+            app:srcCompat="@drawable/pix" />
 
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
-        android:clickable="false"
-        android:text="@string/campus"
-        android:textColor="@android:color/white"
-        android:textSize="45sp"
-        android:textStyle="bold" />
 </RelativeLayout>

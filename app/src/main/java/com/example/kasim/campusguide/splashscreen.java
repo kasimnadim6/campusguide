@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
-
 
 public class splashscreen extends AppCompatActivity {
 
@@ -25,8 +27,8 @@ public class splashscreen extends AppCompatActivity {
             new Thread() {
                 public void run() {
                     try {
-                        sleep(1000);
-                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                        sleep(2000);
+                        Intent i = new Intent(getApplicationContext(),MainActivity.class);
                         startActivity(i);
                         finish();
                     } catch (InterruptedException e) {
@@ -36,7 +38,7 @@ public class splashscreen extends AppCompatActivity {
             }.start();
         }else {
 
-            Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent myIntent = new Intent(getApplicationContext(),MainActivity.class);
             startActivity(myIntent);
             finish();
         }

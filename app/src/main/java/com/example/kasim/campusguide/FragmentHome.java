@@ -1,15 +1,10 @@
 package com.example.kasim.campusguide;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,18 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
-
-/**
- * Created by kasim on 2/19/18.
- */
 
 public class FragmentHome extends Fragment {
 
@@ -45,29 +33,30 @@ public class FragmentHome extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.frag_home, container, false);
 
-        Toolbar toolbar = (Toolbar) myView.findViewById(R.id.toolbar);
+        Toolbar toolbar =  myView.findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         //initCollapsingToolbar();
 
-        recyclerView = (RecyclerView) myView.findViewById(R.id.recycler_view);
+        recyclerView = myView.findViewById(R.id.recycler_view);
 
         list = new ArrayList<>();
         adapter = new MyAdapter(getActivity(), list);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getActivity(), 2);
         recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
+        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
         prepareAlbums();
 
-        try {
-            Glide.with(this).load(R.drawable.cover).into((ImageView) myView.findViewById(R.id.backdrop));
+      try {
+            Glide.with(this).load(R.drawable.dropcover).into((ImageView) myView.findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return myView;
     }
 
@@ -111,47 +100,39 @@ public class FragmentHome extends Fragment {
      */
     private void prepareAlbums() {
         int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
+                R.drawable.mainbuildingcover,
+                R.drawable.librarycover,
+                R.drawable.canteencover,
+                R.drawable.playgroundcover,
+                R.drawable.parkingcover,
+                R.drawable.staffquaters,
                 R.drawable.album7,
-                R.drawable.album8,
-                R.drawable.album9,
-                R.drawable.album10,
-                R.drawable.album11};
-
-        Card a = new Card("True Romance",covers[0]);
+                R.drawable.album8
+                };
+        Card a = new Card("Main Building",covers[0]);
         list.add(a);
 
-        a = new Card("Xscpae",covers[1]);
+        a = new Card("Library",covers[1]);
         list.add(a);
 
-        a = new Card("Maroon 5",covers[2]);
+        a = new Card("Canteen",covers[2]);
         list.add(a);
 
-        a = new Card("Born to Die",  covers[3]);
+        a = new Card("PlayGround",  covers[3]);
         list.add(a);
 
-        a = new Card("Honeymoon", covers[4]);
+        a = new Card("Parking", covers[4]);
         list.add(a);
 
-        a = new Card("I Need a Doctor", covers[5]);
+        a = new Card("Staff Quaters", covers[5]);
         list.add(a);
 
-        a = new Card("Loud", covers[6]);
+        a = new Card("BoysHostel", covers[6]);
         list.add(a);
 
-        a = new Card("Legend",  covers[7]);
+        a = new Card("GirlsHostel",  covers[7]);
         list.add(a);
 
-        a = new Card("Hello", covers[8]);
-        list.add(a);
-
-        a = new Card("Greatest Hits", covers[9]);
-        list.add(a);
 
         adapter.notifyDataSetChanged();
     }
@@ -165,7 +146,7 @@ public class FragmentHome extends Fragment {
         private int spacing;
         private boolean includeEdge;
 
-        public GridSpacingItemDecoration(int spanCount, int spacing, boolean includeEdge) {
+        private GridSpacingItemDecoration(int spanCount, int spacing, boolean includeEdge) {
             this.spanCount = spanCount;
             this.spacing = spacing;
             this.includeEdge = includeEdge;
@@ -197,8 +178,8 @@ public class FragmentHome extends Fragment {
     /**
      * Converting dp to pixel
      */
-    private int dpToPx(int dp) {
+    private int dpToPx() {
         Resources r = getResources();
-        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
+        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10, r.getDisplayMetrics()));
     }
 }

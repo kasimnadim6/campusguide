@@ -14,10 +14,10 @@ public class MainBuilding extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_building);
 
-        btng = (Button) findViewById(R.id.ground);
-        btn1 = (Button) findViewById(R.id.first);
-        btn2 = (Button) findViewById(R.id.second);
-        btn3 = (Button) findViewById(R.id.third);
+        btng = findViewById(R.id.ground);
+        btn1 = findViewById(R.id.first);
+        btn2 = findViewById(R.id.second);
+        btn3 = findViewById(R.id.third);
 
         btng.setOnClickListener(new View.OnClickListener() {
             @Override
