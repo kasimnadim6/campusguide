@@ -15,6 +15,16 @@
     <string name="_4th_floor">4th Floor</string>
     <string name="backdrop_title">SDMIT</string>
     <string name="backdrop_subtitle">Sri Dharmasthala Manjunatheshwara</string>
-    <string name="loading">Loading...</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="m_001">M-001</string>
+    <string name="m_003">M-003</string>
+    <string name="m_004">M-004</string>
+    <string name="m_007">M-007</string>
+    <string name="m_008">M-008</string>
+    <string name="m_011">M-011</string>
+    <string name="m_012">M-012</string>
+    <string name="m_013">M-013</string>
+    <string name="m_015">M-015</string>
 </resources>

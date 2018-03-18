@@ -5,36 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
-    tools:context="com.example.kasim.campusguide.splashscreen">
 
+    tools:context="com.example.kasim.campusguide.splashscreen">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="440dp"
+            android:layout_marginTop="70dp"
             android:gravity="center"
             android:text="@string/campus"
             android:textColor="@color/bg"
             android:textSize="40sp"
             android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="520dp"
-            android:gravity="center"
-            android:text="@string/loading"
-            android:textSize="25sp"
-            android:textStyle="italic" />
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/todo"
             android:fadeScrollbars="false"
-            app:srcCompat="@drawable/pix" />
+            app:srcCompat="@drawable/hostelcover"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
 
 </RelativeLayout>

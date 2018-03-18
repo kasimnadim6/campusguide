@@ -52,7 +52,7 @@ public class FragmentHome extends Fragment {
         prepareAlbums();
 
       try {
-            Glide.with(this).load(R.drawable.dropcover).into((ImageView) myView.findViewById(R.id.backdrop));
+            Glide.with(this).load(R.drawable.sdmcover).into((ImageView) myView.findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }

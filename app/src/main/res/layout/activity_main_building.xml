@@ -8,7 +8,7 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="260dp" />
+        android:layout_height="260dp"/>
 
     <me.relex.circleindicator.CircleIndicator
         android:id="@+id/indicator"
@@ -64,6 +64,7 @@
         android:layout_marginTop="33dp"
         android:background="@android:color/holo_red_light"
         android:text="@string/_4th_floor" />
+
 
 
 </RelativeLayout>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#5a097e</color>
+    <color name="colorPrimary">#5a087e</color>
     <color name="colorPrimaryDark">#b262d4</color>
     <color name="colorAccent">#ca0648</color>
     <color name="bg">#b4b6b7</color>
     <color name="viewBg">#f1f5f8</color>
+    <color name="button">#0c06a4</color>
     <color name="album_title">#4c4c4c</color>
 </resources>

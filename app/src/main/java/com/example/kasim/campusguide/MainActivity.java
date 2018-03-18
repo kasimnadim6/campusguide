@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity
 
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab =  findViewById(R.id.fab);
+       /* FloatingActionButton fab =  findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -76,17 +76,7 @@ public class MainActivity extends AppCompatActivity
         }
         backPressedTime = System.currentTimeMillis();
     }
-
-   /* if(backPressedTime + 500> System.currentTimeMillis()){
-        backToast.cancel();
-        super.onBackPressed();
-        return;
-    }else{
-        backToast = Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT);
-        backToast.show();
-    }
-    backPressedTime = System.currentTimeMillis();*/
-
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -107,7 +97,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -122,7 +112,14 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_floors) {
             Intent intent = new Intent(MainActivity.this,MainBuilding.class);
             startActivity(intent);
-        } else if (id == R.id.nav_explore) {
+        }  else if (id == R.id.nav_share) {
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(
+                    android.content.Intent.EXTRA_TEXT, "Thisis just a text...add link of your app it will goto playstore");
+            startActivity(Intent.createChooser(i, "Share via"));
+
+        }else if (id == R.id.nav_explore) {
 
         } else if (id == R.id.nav_manage) {
 

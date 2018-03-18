@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
 import me.relex.circleindicator.CircleIndicator;
@@ -15,10 +16,10 @@ import me.relex.circleindicator.CircleIndicator;
 public class MainBuilding extends AppCompatActivity {
 
     Button btng, btn1, btn2, btn3;
-    private static ViewPager mPager;
+    protected static ViewPager mPager;
     private static int currentPage = 0;
-    private static final Integer[] images = {R.drawable.mainbuildingcover, R.drawable.canteencover
-            , R.drawable.parkingcover, R.drawable.playgroundcover, R.drawable.librarycover, R.drawable.staffquaters};
+    private static final Integer[] images = {R.drawable.mainbuildingcover, R.drawable.canteencover,
+            R.drawable.parkingcover,R.drawable.hostelcover, R.drawable.playgroundcover, R.drawable.librarycover, R.drawable.staffquaters};
     private ArrayList<Integer> imagesArray = new ArrayList<>();
 
     @Override
@@ -66,12 +67,11 @@ public class MainBuilding extends AppCompatActivity {
     }
 
     private void init() {
-        for (int i = 0; i < images.length; i++)
-            imagesArray.add(images[i]);
+        imagesArray.addAll(Arrays.asList(images));
 
-        mPager = (ViewPager) findViewById(R.id.pager);
+        mPager = findViewById(R.id.pager);
         mPager.setAdapter(new ImageAdapter(MainBuilding.this, imagesArray));
-        CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
+        CircleIndicator indicator = findViewById(R.id.indicator);
         indicator.setViewPager(mPager);
 
         // Auto start of viewpager
@@ -85,12 +85,12 @@ public class MainBuilding extends AppCompatActivity {
             }
         };
         Timer swipeTimer = new Timer();
-        swipeTimer.schedule(new TimerTask() {
+        /*swipeTimer.schedule(new TimerTask() {
             @Override
             public void run() {
                 handler.post(Update);
             }
-        }, 2500, 2500);
+        }, 2500, 2500);*/
     }
 }
 
