@@ -1,9 +1,5 @@
 package com.example.kasim.campusguide;
 
-/**
- * Created by kasim on 3/3/18.
- */
-
 public class Card {
 
     private String name;

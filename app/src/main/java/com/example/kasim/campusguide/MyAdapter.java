@@ -56,10 +56,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             @Override
             public void onClick(View view) {
                 if(holder.getAdapterPosition()==0){
-                    Intent i =new Intent(mContext,MainBuilding.class);
+                    Intent i =new Intent(mContext,fragment.class);
+                    i.putExtra("block",1);
                     mContext.startActivity(i);
                 }else if(holder.getAdapterPosition()==1){
-                    Intent i =new Intent(mContext,FFloor.class);
+                    Intent i =new Intent(mContext,fragment.class);
+                    i.putExtra("block",2);
                     mContext.startActivity(i);
                 }
             }

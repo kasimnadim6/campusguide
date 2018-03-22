@@ -15,10 +15,25 @@ public class fragment extends AppCompatActivity {
         setContentView(R.layout.activity_fragment);
 
         Intent i = getIntent();
-        int id = i.getIntExtra("room",0);
+        int rid = i.getIntExtra("room",0);
+        int fid = i.getIntExtra("floor",0);
+        int bid = i.getIntExtra("block",0);
 
-        if(id==1)loadFragment (new m001());
-        else if(id==3) loadFragment(new m003());
+        if(bid==1){
+            loadFragment(new mainbuilding());
+        } else if(bid==2) {
+            loadFragment(new m001());
+        }
+        if(fid==1){
+            loadFragment(new gfloor());
+        }else if(fid==2){
+            loadFragment(new ffloor());
+        }
+        if(rid==1){
+            loadFragment (new m001());
+        }else if(rid==3){
+            loadFragment(new m003());
+        }
     }
     private void loadFragment(Fragment fragment){
         FragmentManager fm = getFragmentManager();
