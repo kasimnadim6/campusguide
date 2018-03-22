@@ -1,0 +1,79 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kasim.campusguide.mainbuilding">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="225dp"/>
+        <Button
+            android:id="@+id/ground"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pager"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="@string/ground_floor" />
+
+        <Button
+            android:id="@+id/first"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/ground"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorAccent"
+            android:text="@string/_1st_floor"/>
+
+        <Button
+            android:id="@+id/second"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/first"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="33dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/_2nd_floor" />
+
+        <Button
+            android:id="@+id/third"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/second"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/holo_green_light"
+            android:text="@string/_3rd_floor" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/second"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="33dp"
+            android:background="@android:color/holo_red_light"
+            android:text="@string/_4th_floor" />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
