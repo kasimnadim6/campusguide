@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@color/album_title"
     tools:context="com.example.kasim.campusguide.splashscreen">
 
         <TextView
@@ -24,8 +24,9 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/todo"
             android:fadeScrollbars="false"
-            app:srcCompat="@drawable/hostelcover"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
+            app:srcCompat="@drawable/splash"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"/>
 
 </RelativeLayout>

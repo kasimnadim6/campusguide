@@ -1,15 +1,15 @@
 package com.example.kasim.campusguide;
 
+
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -34,8 +34,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         this.list = list;
     }
 
+    @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.album_card, parent, false);
 
@@ -43,7 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
         Card album = list.get(position);
 
         holder.title.setText(album.getName());
@@ -55,13 +56,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.thumbnail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(holder.getAdapterPosition()==0){
-                    Intent i =new Intent(mContext,fragment.class);
-                    i.putExtra("block",1);
+                if (holder.getAdapterPosition() == 0) {
+                    Intent i = new Intent(mContext, fragment.class);
+                    i.putExtra("block", 1);
                     mContext.startActivity(i);
-                }else if(holder.getAdapterPosition()==1){
-                    Intent i =new Intent(mContext,fragment.class);
-                    i.putExtra("block",2);
+                } else if (holder.getAdapterPosition() == 1) {
+                    Intent i = new Intent(mContext, fragment.class);
+                    i.putExtra("block", 2);
                     mContext.startActivity(i);
                 }
             }
@@ -72,5 +73,5 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public int getItemCount() {
         return list.size();
     }
-}
 
+}

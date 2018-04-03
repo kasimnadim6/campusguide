@@ -6,6 +6,10 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.kasim.campusguide.Ffloor.ffloor;
+import com.example.kasim.campusguide.Gfloor.gfloor;
+import com.example.kasim.campusguide.Gfloor.m001;
+import com.example.kasim.campusguide.Gfloor.m003;
 
 public class fragment extends AppCompatActivity {
 
@@ -15,7 +19,7 @@ public class fragment extends AppCompatActivity {
         setContentView(R.layout.activity_fragment);
 
         Intent i = getIntent();
-        int rid = i.getIntExtra("room",0);
+        //int rid = i.getIntExtra("room",0);
         int fid = i.getIntExtra("floor",0);
         int bid = i.getIntExtra("block",0);
 
@@ -24,21 +28,29 @@ public class fragment extends AppCompatActivity {
         } else if(bid==2) {
             loadFragment(new m001());
         }
+
+
         if(fid==1){
             loadFragment(new gfloor());
         }else if(fid==2){
             loadFragment(new ffloor());
         }
-        if(rid==1){
-            loadFragment (new m001());
+
+
+       /* if(rid==1){
+            loadFragment(new m001());
         }else if(rid==3){
             loadFragment(new m003());
-        }
+        }*/
     }
+
+
     private void loadFragment(Fragment fragment){
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fg,fragment);
         ft.commit();
     }
+
+
 }

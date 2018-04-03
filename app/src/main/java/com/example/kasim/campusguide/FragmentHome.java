@@ -8,21 +8,17 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class FragmentHome extends Fragment {
 
-    private RecyclerView recyclerView;
     private MyAdapter adapter;
     private List<Card> list;
 
@@ -33,12 +29,7 @@ public class FragmentHome extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.frag_home, container, false);
 
-        Toolbar toolbar =  myView.findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        //initCollapsingToolbar();
-
-        recyclerView = myView.findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = myView.findViewById(R.id.recycler_view);
 
         list = new ArrayList<>();
         adapter = new MyAdapter(getActivity(), list);
@@ -60,44 +51,6 @@ public class FragmentHome extends Fragment {
         return myView;
     }
 
-    private void setSupportActionBar(Toolbar toolbar) {
-    }
-
-    /*
-     * Initializing collapsing toolbar
-     * Will show and hide the toolbar title on scroll
-
-    private void initCollapsingToolbar() {
-        final CollapsingToolbarLayout collapsingToolbar =
-                (CollapsingToolbarLayout) myView.findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle(" ");
-        AppBarLayout appBarLayout = (AppBarLayout) myView.findViewById(R.id.appbar);
-        appBarLayout.setExpanded(true);
-
-        // hiding & showing the title when toolbar expanded & collapsed
-        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
-            boolean isShow = false;
-            int scrollRange = -1;
-
-            @Override
-            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-                if (scrollRange == -1) {
-                    scrollRange = appBarLayout.getTotalScrollRange();
-                }
-                if (scrollRange + verticalOffset == 0) {
-                    collapsingToolbar.setTitle(getString(R.string.app_name));
-                    isShow = true;
-                } else if (isShow) {
-                    collapsingToolbar.setTitle(" ");
-                    isShow = false;
-                }
-            }
-        });
-    }*/
-
-    /**
-     * Adding few albums for testing
-     */
     private void prepareAlbums() {
         int[] covers = new int[]{
                 R.drawable.mainbuildingcover,
@@ -175,9 +128,7 @@ public class FragmentHome extends Fragment {
         }
     }
 
-    /**
-     * Converting dp to pixel
-     */
+    //Converting dp to pixel
     private int dpToPx() {
         Resources r = getResources();
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10, r.getDisplayMetrics()));
