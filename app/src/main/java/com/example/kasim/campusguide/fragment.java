@@ -6,10 +6,6 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.example.kasim.campusguide.Ffloor.ffloor;
-import com.example.kasim.campusguide.Gfloor.gfloor;
-import com.example.kasim.campusguide.Gfloor.m001;
-import com.example.kasim.campusguide.Gfloor.m003;
 
 public class fragment extends AppCompatActivity {
 
@@ -22,11 +18,12 @@ public class fragment extends AppCompatActivity {
         //int rid = i.getIntExtra("room",0);
         int fid = i.getIntExtra("floor",0);
         int bid = i.getIntExtra("block",0);
+        int cid = i.getIntExtra("ccfloor",0);
 
         if(bid==1){
             loadFragment(new mainbuilding());
         } else if(bid==2) {
-            loadFragment(new m001());
+            loadFragment(new ccfbuilding());
         }
 
 
@@ -35,13 +32,6 @@ public class fragment extends AppCompatActivity {
         }else if(fid==2){
             loadFragment(new ffloor());
         }
-
-
-       /* if(rid==1){
-            loadFragment(new m001());
-        }else if(rid==3){
-            loadFragment(new m003());
-        }*/
     }
 
 

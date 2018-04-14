@@ -1,24 +1,25 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-       <android.support.v4.view.ViewPager
-           android:id="@+id/pager"
-           android:layout_width="match_parent"
-           android:layout_height="260dp"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
 
-       <me.relex.circleindicator.CircleIndicator
-           android:id="@+id/indicator"
-           android:layout_width="match_parent"
-           android:layout_height="35dp"
-           android:layout_marginTop="225dp"/>
-   </RelativeLayout>
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="225dp"/>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +48,6 @@
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </android.support.v7.widget.CardView>
-
 
         </android.support.constraint.ConstraintLayout>
 
@@ -78,7 +78,6 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,39 +106,8 @@
                     android:textStyle="bold" />
             </android.support.v7.widget.CardView>
 
-
         </android.support.constraint.ConstraintLayout>
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="160dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp">
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/third"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                app:cardBackgroundColor="@color/bg"
-                app:cardCornerRadius="12dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/_3rd_floor"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
-            </android.support.v7.widget.CardView>
-
-        </android.support.constraint.ConstraintLayout>
-
 
     </LinearLayout>
 
-
 </LinearLayout>
-
-
-

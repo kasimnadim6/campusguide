@@ -43,7 +43,7 @@ public class FragmentHome extends Fragment {
         prepareAlbums();
 
       try {
-            Glide.with(this).load(R.drawable.sdmcover).into((ImageView) myView.findViewById(R.id.backdrop));
+            Glide.with(this).load(R.drawable.cover).into((ImageView) myView.findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -53,39 +53,39 @@ public class FragmentHome extends Fragment {
 
     private void prepareAlbums() {
         int[] covers = new int[]{
+
                 R.drawable.mainbuildingcover,
+                R.drawable.ccfbuilding,
                 R.drawable.librarycover,
                 R.drawable.canteencover,
                 R.drawable.playgroundcover,
                 R.drawable.parkingcover,
                 R.drawable.staffquaters,
-                R.drawable.album7,
-                R.drawable.album8
+                R.drawable.hostelcover
                 };
         Card a = new Card("Main Building",covers[0]);
         list.add(a);
 
-        a = new Card("Library",covers[1]);
+        a = new Card("CCF Building",covers[1]);
         list.add(a);
 
-        a = new Card("Canteen",covers[2]);
+        a = new Card("Library",covers[2]);
         list.add(a);
 
-        a = new Card("PlayGround",  covers[3]);
+        a = new Card("Canteen",covers[3]);
         list.add(a);
 
-        a = new Card("Parking", covers[4]);
+        a = new Card("PlayGround",  covers[4]);
         list.add(a);
 
-        a = new Card("Staff Quaters", covers[5]);
+        a = new Card("Parking", covers[5]);
         list.add(a);
 
-        a = new Card("BoysHostel", covers[6]);
+        a = new Card("Staff Quaters", covers[6]);
         list.add(a);
 
-        a = new Card("GirlsHostel",  covers[7]);
+        a = new Card("Hostel", covers[7]);
         list.add(a);
-
 
         adapter.notifyDataSetChanged();
     }
