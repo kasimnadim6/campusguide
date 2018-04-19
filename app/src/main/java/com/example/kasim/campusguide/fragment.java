@@ -24,6 +24,18 @@ public class fragment extends AppCompatActivity {
             loadFragment(new mainbuilding());
         } else if(bid==2) {
             loadFragment(new ccfbuilding());
+        }else if(bid==3) {
+            loadFragment(new library());
+        }else if(bid==4) {
+            loadFragment(new canteen());
+        }else if(bid==5) {
+            loadFragment(new playground());
+        }else if(bid==6) {
+            loadFragment(new parking());
+        }else if(bid==7) {
+            loadFragment(new staff());
+        }else if(bid==8) {
+            loadFragment(new hostel());
         }
 
 
@@ -31,6 +43,15 @@ public class fragment extends AppCompatActivity {
             loadFragment(new gfloor());
         }else if(fid==2){
             loadFragment(new ffloor());
+        }
+
+
+        if(cid==1){
+            loadFragment(new gccf());
+        }else if(cid==2){
+            loadFragment(new fccf());
+        }else if(cid==3){
+            loadFragment(new sccf());
         }
     }
 

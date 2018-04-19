@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="campus">CAMPUS GUIDE</string>
+    <string name="splash_name">SDMIT\nCAMPUS GUIDE</string>
     <string name="todo">TODO</string>
     <string name="exit">Exit</string>
     <string name="ground_floor">GROUND FLOOR</string>
@@ -29,4 +29,13 @@
     <string name="details">DETAILS</string>
     <string name="title_activity_maps">Map</string>
     <string name="info">Click and hold the Inital point.After when you see the point click and hold the destination point !</string>
+    <string name="block_a">BLOCK-A</string>
+    <string name="block_b">BLOCK-B</string>
+    <string name="c004">C-004</string>
+    <string name="c005">C-005</string>
+    <string name="c_105">C-105</string>
+    <string name="c_106">C-106</string>
+    <string name="c_204">C-204</string>
+    <string name="c_205">C-205</string>
+    <string name="c_206">C-206</string>
 </resources>

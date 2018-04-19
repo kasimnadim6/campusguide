@@ -51,6 +51,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/backdrop_title"
                         android:textColor="@android:color/white"
+                        android:textStyle="bold"
                         android:textSize="@dimen/backdrop_title" />
 
                     <TextView
@@ -58,6 +59,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/backdrop_subtitle"
                         android:textColor="@android:color/white"
+                        android:textStyle="bold"
                         android:textSize="@dimen/backdrop_subtitle" />
 
                 </LinearLayout>

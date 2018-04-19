@@ -13,7 +13,6 @@
         android:layout_alignParentTop="true"
         tools:context="com.kasim.gmap.MapsActivity" />
 
-
     <ImageButton
         android:id="@+id/st"
         android:layout_width="wrap_content"
@@ -26,6 +25,7 @@
         android:layout_marginRight="10dp" />
 
     <TextView
+        android:id="@+id/inf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_info"

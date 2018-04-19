@@ -64,6 +64,30 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     Intent i = new Intent(mContext, fragment.class);
                     i.putExtra("block", 2);
                     mContext.startActivity(i);
+                }else if (holder.getAdapterPosition() == 2) {
+                    Intent i = new Intent(mContext, fragment.class);
+                    i.putExtra("block", 3);
+                    mContext.startActivity(i);
+                }else if (holder.getAdapterPosition() == 3) {
+                    Intent i = new Intent(mContext, fragment.class);
+                    i.putExtra("block", 4);
+                    mContext.startActivity(i);
+                }else if (holder.getAdapterPosition() == 4) {
+                    Intent i = new Intent(mContext, fragment.class);
+                    i.putExtra("block", 5);
+                    mContext.startActivity(i);
+                }else if (holder.getAdapterPosition() == 5) {
+                    Intent i = new Intent(mContext, fragment.class);
+                    i.putExtra("block", 6);
+                    mContext.startActivity(i);
+                }else if (holder.getAdapterPosition() == 6) {
+                    Intent i = new Intent(mContext, fragment.class);
+                    i.putExtra("block", 7);
+                    mContext.startActivity(i);
+                }else if (holder.getAdapterPosition() == 7) {
+                    Intent i = new Intent(mContext, fragment.class);
+                    i.putExtra("block", 8);
+                    mContext.startActivity(i);
                 }
             }
         });
