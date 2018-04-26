@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class fragment extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +18,8 @@ public class fragment extends AppCompatActivity {
         int fid = i.getIntExtra("floor",0);
         int bid = i.getIntExtra("block",0);
         int cid = i.getIntExtra("ccfloor",0);
+
+        //click action on blocks in home
 
         if(bid==1){
             loadFragment(new mainbuilding());
@@ -38,13 +39,21 @@ public class fragment extends AppCompatActivity {
             loadFragment(new hostel());
         }
 
+        //click action on the mainbuilding
 
         if(fid==1){
             loadFragment(new gfloor());
         }else if(fid==2){
             loadFragment(new ffloor());
+        }else if(fid==3){
+            loadFragment(new sfloor());
+        }else if(fid==4){
+            loadFragment(new tfloor());
+        }else if(fid==5){
+            loadFragment(new topfloor());
         }
 
+        //click action on the ccf building
 
         if(cid==1){
             loadFragment(new gccf());
@@ -62,6 +71,5 @@ public class fragment extends AppCompatActivity {
         ft.replace(R.id.fg,fragment);
         ft.commit();
     }
-
 
 }

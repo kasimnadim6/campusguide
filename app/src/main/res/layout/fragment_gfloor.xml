@@ -22,7 +22,7 @@
                 android:elevation="35dp"
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -31,8 +31,9 @@
 
                     <ImageButton
                         android:id="@+id/btn1"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m001"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -43,7 +44,7 @@
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -52,9 +53,9 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="8dp"
                 android:elevation="35dp"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -63,8 +64,9 @@
 
                     <ImageButton
                         android:id="@+id/btn3"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m003"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -72,10 +74,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/m_003"
-                        android:gravity="center"
-                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -84,9 +86,9 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="8dp"
                 android:elevation="35dp"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -95,8 +97,9 @@
 
                     <ImageButton
                         android:id="@+id/btn4"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m004"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -104,10 +107,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/m_004"
-                        android:gravity="center"
-                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -116,9 +119,9 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="8dp"
                 android:elevation="35dp"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -127,8 +130,9 @@
 
                     <ImageButton
                         android:id="@+id/btn7"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m007"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -136,10 +140,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/m_007"
-                        android:gravity="center"
-                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -148,9 +152,9 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="8dp"
                 android:elevation="35dp"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -159,8 +163,9 @@
 
                     <ImageButton
                         android:id="@+id/btn8"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m008"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -168,10 +173,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/m_008"
-                        android:gravity="center"
-                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -180,9 +185,9 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="8dp"
                 android:elevation="35dp"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -191,8 +196,9 @@
 
                     <ImageButton
                         android:id="@+id/btn11"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m011"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -200,10 +206,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/m_011"
-                        android:gravity="center"
-                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -212,9 +218,9 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="8dp"
                 android:elevation="35dp"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -223,8 +229,9 @@
 
                     <ImageButton
                         android:id="@+id/btn12"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m012"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -232,10 +239,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/m_012"
-                        android:gravity="center"
-                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -244,9 +251,9 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="8dp"
                 android:elevation="35dp"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -255,8 +262,9 @@
 
                     <ImageButton
                         android:id="@+id/btn13"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m013"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -264,10 +272,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/m_013"
-                        android:gravity="center"
-                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -276,9 +284,9 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="8dp"
                 android:elevation="35dp"
-                android:layout_marginStart="6dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/card"
+                app:cardBackgroundColor="@color/colorPrimary"
                 tools:ignore="UnusedAttribute">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -287,8 +295,9 @@
 
                     <ImageButton
                         android:id="@+id/btn15"
+                        android:padding="4dp"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
+                        android:layout_height="105dp"
                         android:src="@mipmap/m015"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -296,10 +305,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/m_015"
-                        android:gravity="center"
-                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/bg"/>
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -312,8 +321,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
         android:textColor="@color/white"
         android:text="@string/details"/>
 

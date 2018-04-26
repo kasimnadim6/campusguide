@@ -63,7 +63,6 @@ public class gfloor extends Fragment implements View.OnClickListener {
         return myView;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

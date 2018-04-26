@@ -18,11 +18,11 @@ import me.relex.circleindicator.CircleIndicator;
 public class mainbuilding extends Fragment {
 
     View myView;
-    Button btng, btn1, btn2, btn3;
+    Button btng, btn1, btn2, btn3,btn4;
     protected static CircleIndicator indicator;
     protected static ViewPager mPager;
     private static int currentPage = 0;
-    private static final Integer[] images = {R.drawable.image2,R.drawable.hostelcover,R.drawable.image1};
+    private static final Integer[] images = {R.drawable.sdmcover,R.drawable.image2,R.drawable.image3,R.drawable.hostelcover,R.drawable.image1};
     private ArrayList<Integer> imagesArray = new ArrayList<>();
 
     @Override
@@ -61,6 +61,7 @@ public class mainbuilding extends Fragment {
         btn1 = myView.findViewById(R.id.first);
         btn2 = myView.findViewById(R.id.second);
         btn3 = myView.findViewById(R.id.third);
+        btn4 = myView.findViewById(R.id.forth);
 
         btng.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,10 +81,11 @@ public class mainbuilding extends Fragment {
             }
         });
 
-       /* btn2.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getBaseContext(),SFloor.class);
+                Intent i = new Intent(getActivity(), fragment.class);
+                i.putExtra("floor", 3);
                 startActivity(i);
             }
         });
@@ -91,10 +93,22 @@ public class mainbuilding extends Fragment {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getBaseContext(),TFloor.class);
+                Intent i = new Intent(getActivity(), fragment.class);
+                i.putExtra("floor", 4);
                 startActivity(i);
             }
-        });*/
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), fragment.class);
+                i.putExtra("floor", 5);
+                startActivity(i);
+            }
+        });
+
+
         return myView;
     }
 }

@@ -61,7 +61,8 @@
             app:layout_constraintHorizontal_bias="0.92"
             app:layout_constraintStart_toEndOf="@+id/ground"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.100000024"></Button>
+            app:layout_constraintVertical_bias="0.100000024">
+        </Button>
 
         <Button
             android:id="@+id/second"
@@ -97,7 +98,28 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.92"
             app:layout_constraintStart_toEndOf="@+id/second"
-            app:layout_constraintTop_toTopOf="parent"></Button>
+            app:layout_constraintTop_toTopOf="parent">
+        </Button>
+
+        <Button
+            android:id="@+id/forth"
+            android:layout_width="160dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/_4th_floor"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/second">
+        </Button>
     </android.support.constraint.ConstraintLayout>
 
 </LinearLayout>

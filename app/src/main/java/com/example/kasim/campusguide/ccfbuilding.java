@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Timer;
@@ -24,8 +23,8 @@ public class ccfbuilding extends Fragment {
     protected static ViewPager mPager;
     private static int currentPage = 0;
 
-    private static final Integer[] images = {R.drawable.image1, R.drawable.image2,
-            R.drawable.hostelcover};
+    private static final Integer[] images = {R.drawable.image3,R.drawable.sdmcover,
+            R.drawable.image2,R.drawable.image1,R.drawable.hostelcover};
     private ArrayList<Integer> imagesArray = new ArrayList<>();
 
     @Override

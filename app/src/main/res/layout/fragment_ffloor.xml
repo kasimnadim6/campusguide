@@ -1,9 +1,68 @@
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kasim.campusguide.ffloor">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.kasim.campusguide.ffloor"
+    android:orientation="vertical">
 
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="8dp"
+                android:elevation="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                tools:ignore="UnusedAttribute">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn1"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:src="@mipmap/m001"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/c004"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <Button
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/white"
+        android:text="@string/details"/>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.github.barteksc.pdfviewer.PDFView>
+</LinearLayout>
