@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -34,7 +35,7 @@
                         android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m001"
+                        android:src="@mipmap/c204"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
@@ -68,7 +69,7 @@
                         android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m003"
+                        android:src="@mipmap/c205"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
@@ -102,7 +103,7 @@
                         android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m003"
+                        android:src="@mipmap/c206"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView

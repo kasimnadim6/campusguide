@@ -67,7 +67,7 @@ public class gfloor extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn1:
-                pdfView.fromAsset("cpro.pdf")/*.enableDoubletap(true)
+                pdfView.fromAsset("m003.pdf")/*.enableDoubletap(true)
                            .scrollHandle(new DefaultScrollHandle(getContext(),true))*/
                         .load();
                 break;

@@ -34,7 +34,7 @@
                         android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m001"
+                        android:src="@mipmap/c105"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
@@ -68,7 +68,7 @@
                         android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m003"
+                        android:src="@mipmap/c106"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
