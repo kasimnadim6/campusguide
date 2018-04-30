@@ -127,7 +127,6 @@ public class FragmentHome extends Fragment {
             }
         }
     }
-
     //Converting dp to pixel
     private int dpToPx() {
         Resources r = getResources();

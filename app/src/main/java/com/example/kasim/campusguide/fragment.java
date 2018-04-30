@@ -64,12 +64,10 @@ public class fragment extends AppCompatActivity {
         }
     }
 
-
     private void loadFragment(Fragment fragment){
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fg,fragment);
         ft.commit();
     }
-
 }

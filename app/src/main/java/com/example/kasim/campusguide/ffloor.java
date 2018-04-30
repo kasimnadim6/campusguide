@@ -2,7 +2,6 @@ package com.example.kasim.campusguide;
 
 import android.os.Bundle;
 import android.app.Fragment;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +10,7 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 public class ffloor extends Fragment implements View.OnClickListener {
 
-    ImageButton room1,room2,room3,room4,room5,room7,room8,room9,room10,room11,room12,room13,room14;
+    ImageButton room1,room2,room3,room4,room6,room7,room8,room9,room10,room11;
     View myView;
     PDFView pdfView;
     @Override
@@ -33,8 +32,8 @@ public class ffloor extends Fragment implements View.OnClickListener {
         room4= myView.findViewById(R.id.btn4);
         room4.setOnClickListener(this);
 
-        room5 = myView.findViewById(R.id.btn5);
-        room5.setOnClickListener(this);
+        room6 = myView.findViewById(R.id.btn6);
+        room6.setOnClickListener(this);
 
         room7 = myView.findViewById(R.id.btn7);
         room7.setOnClickListener(this);
@@ -51,15 +50,6 @@ public class ffloor extends Fragment implements View.OnClickListener {
         room11 = myView.findViewById(R.id.btn11);
         room11.setOnClickListener(this);
 
-        room12 = myView.findViewById(R.id.btn12);
-        room12.setOnClickListener(this);
-
-        room13 = myView.findViewById(R.id.btn13);
-        room13.setOnClickListener(this);
-
-        room14 = myView.findViewById(R.id.btn14);
-        room14.setOnClickListener(this);
-
         return myView;
     }
 
@@ -67,45 +57,35 @@ public class ffloor extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn1:
-                pdfView.fromAsset("c004.pdf").load();
+                pdfView.fromAsset("m101.pdf").load();
                 break;
             case R.id.btn2:
-                pdfView.fromAsset("c005.pdf").load();
+                pdfView.fromAsset("m104.pdf").load();
                 break;
             case R.id.btn3:
-                pdfView.fromAsset("c104.pdf").load();
+                pdfView.fromAsset("m105.pdf").load();
                 break;
             case R.id.btn4:
-                pdfView.fromAsset("c105.pdf").load();
+                pdfView.fromAsset("m106.pdf").load();
                 break;
-            case R.id.btn5:
-                pdfView.fromAsset("c106.pdf").load();
+            case R.id.btn6:
+                pdfView.fromAsset("m108.pdf").load();
                 break;
             case R.id.btn7:
-                pdfView.fromAsset("c004.pdf").load();
+                pdfView.fromAsset("m109.pdf").load();
                 break;
             case R.id.btn8:
-                pdfView.fromAsset("c005.pdf").load();
+                pdfView.fromAsset("m111.pdf").load();
                 break;
             case R.id.btn9:
-                pdfView.fromAsset("c005.pdf").load();
+                pdfView.fromAsset("m112.pdf").load();
                 break;
                 case R.id.btn10:
-                pdfView.fromAsset("c005.pdf").load();
+                pdfView.fromAsset("m115.pdf").load();
                 break;
             case R.id.btn11:
-                pdfView.fromAsset("c005.pdf").load();
+                pdfView.fromAsset("m116.pdf").load();
                 break;
-            case R.id.btn12:
-                pdfView.fromAsset("c005.pdf").load();
-                break;
-            case R.id.btn13:
-                pdfView.fromAsset("c005.pdf").load();
-                break;
-            case R.id.btn14:
-                pdfView.fromAsset("c005.pdf").load();
-                break;
-
         }
     }
 }

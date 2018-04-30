@@ -6,12 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class topfloor extends Fragment implements View.OnClickListener {
 
-    ImageButton room1,room2,room3,room4,room5,room7,room8,room9,room10,room11,room12,room13,room14,room15;
+    ImageButton room1,room2,room3,room4,room5,room7,room8,room9,room10,room11,room12,room14;
     View myView;
     PDFView pdfView;
     @Override
@@ -54,14 +53,8 @@ public class topfloor extends Fragment implements View.OnClickListener {
         room12 = myView.findViewById(R.id.btn12);
         room12.setOnClickListener(this);
 
-        room13 = myView.findViewById(R.id.btn13);
-        room13.setOnClickListener(this);
-
         room14 = myView.findViewById(R.id.btn14);
         room14.setOnClickListener(this);
-
-        room15 = myView.findViewById(R.id.btn15);
-        room15.setOnClickListener(this);
 
         return myView;
     }
@@ -85,31 +78,25 @@ public class topfloor extends Fragment implements View.OnClickListener {
                 pdfView.fromAsset("m406.pdf").load();
                 break;
             case R.id.btn7:
-                pdfView.fromAsset("c004.pdf").load();
-                break;
-            case R.id.btn8:
                 pdfView.fromAsset("m411.pdf").load();
                 break;
-            case R.id.btn9:
+            case R.id.btn8:
                 pdfView.fromAsset("m412.pdf").load();
                 break;
-            case R.id.btn10:
+            case R.id.btn9:
                 pdfView.fromAsset("m413.pdf").load();
                 break;
-            case R.id.btn11:
+            case R.id.btn10:
                 pdfView.fromAsset("m414.pdf").load();
                 break;
-            case R.id.btn12:
-                pdfView.fromAsset("c005.pdf").load();
+            case R.id.btn11:
+                pdfView.fromAsset("m415.pdf").load();
                 break;
-            case R.id.btn13:
-                pdfView.fromAsset("c005.pdf").load();
+            case R.id.btn12:
+                pdfView.fromAsset("m416.pdf").load();
                 break;
             case R.id.btn14:
-                pdfView.fromAsset("c005.pdf").load();
-                break;
-            case R.id.btn15:
-                pdfView.fromAsset("c005.pdf").load();
+                pdfView.fromAsset("selco.pdf").load();
                 break;
         }
     }

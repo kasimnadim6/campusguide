@@ -9,10 +9,9 @@ import android.widget.ImageButton;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
-
 public class sccf extends Fragment implements View.OnClickListener {
 
-    ImageButton btn1, btn2,btn3;
+    ImageButton btn1, btn2,btn3,btn4,btn5;
     PDFView pdfView;
     View myView;
     @Override
@@ -31,6 +30,13 @@ public class sccf extends Fragment implements View.OnClickListener {
 
         btn3 = myView.findViewById(R.id.btn3);
         btn3.setOnClickListener(this);
+
+        btn4 = myView.findViewById(R.id.btn4);
+        btn4.setOnClickListener(this);
+
+        btn5 = myView.findViewById(R.id.btn5);
+        btn5.setOnClickListener(this);
+
         return myView;
     }
 
@@ -38,12 +44,18 @@ public class sccf extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn1:
-                pdfView.fromAsset("c204.pdf").load();
+                pdfView.fromAsset("library.pdf").load();
                 break;
             case R.id.btn2:
-                pdfView.fromAsset("c205.pdf").load();
+                pdfView.fromAsset("c202.pdf").load();
                 break;
             case R.id.btn3:
+                pdfView.fromAsset("c204.pdf").load();
+                break;
+            case R.id.btn4:
+                pdfView.fromAsset("c205.pdf").load();
+                break;
+            case R.id.btn5:
                 pdfView.fromAsset("c206.pdf").load();
                 break;
         }

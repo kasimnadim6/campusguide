@@ -35,6 +35,72 @@
                         android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
+                        android:src="@drawable/librarycover"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Library"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="8dp"
+                android:elevation="35dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="6dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                tools:ignore="UnusedAttribute">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn2"
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:src="@mipmap/c202"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/c_202"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="8dp"
+                android:elevation="35dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="6dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                tools:ignore="UnusedAttribute">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn3"
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
                         android:src="@mipmap/c204"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
@@ -65,7 +131,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/btn2"
+                        android:id="@+id/btn4"
                         android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
@@ -99,7 +165,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/btn3"
+                        android:id="@+id/btn5"
                         android:padding="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"

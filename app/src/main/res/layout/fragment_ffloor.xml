@@ -41,7 +41,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-101"
+                        android:text="@string/m_101"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -49,6 +49,7 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
@@ -68,13 +69,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m103"
+                        android:src="@mipmap/m104"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-103"
+                        android:text="@string/m_104"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -101,13 +102,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m104"
+                        android:src="@mipmap/m105"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-104"
+                        android:text="@string/m_105"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -134,13 +135,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m105"
+                        android:src="@mipmap/m007"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-105"
+                        android:text="@string/m_106"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -167,13 +168,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m007"
+                        android:src="@drawable/gents"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-106"
+                        android:text="@string/m_107"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -200,13 +201,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@drawable/gents"
+                        android:src="@mipmap/m105"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-107"
+                        android:text="@string/m_108"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -233,13 +234,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m007"
+                        android:src="@mipmap/m109"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-108"
+                        android:text="@string/m_109"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -247,6 +248,7 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
@@ -266,13 +268,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m109"
+                        android:src="@mipmap/m111"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-109"
+                        android:text="@string/m_111"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -299,13 +301,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m111"
+                        android:src="@mipmap/m112"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-110"
+                        android:text="@string/m_112"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -313,6 +315,7 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
@@ -332,13 +335,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m109"
+                        android:src="@mipmap/m115"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-111"
+                        android:text="@string/m_115"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -365,112 +368,13 @@
                         android:padding="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="105dp"
-                        android:src="@mipmap/m112"
-                        android:scaleType="fitXY"
-                        tools:ignore="ContentDescription" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="M-112"
-                        android:gravity="center"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"/>
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                app:cardCornerRadius="8dp"
-                android:elevation="35dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/colorPrimary"
-                tools:ignore="UnusedAttribute">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageButton
-                        android:id="@+id/btn12"
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="105dp"
-                        android:src="@mipmap/m105"
-                        android:scaleType="fitXY"
-                        tools:ignore="ContentDescription" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="M-114"
-                        android:gravity="center"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"/>
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                app:cardCornerRadius="8dp"
-                android:elevation="35dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/colorPrimary"
-                tools:ignore="UnusedAttribute">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageButton
-                        android:id="@+id/btn13"
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="105dp"
-                        android:src="@mipmap/m115"
-                        android:scaleType="fitXY"
-                        tools:ignore="ContentDescription" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="M-115"
-                        android:gravity="center"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"/>
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                app:cardCornerRadius="8dp"
-                android:elevation="35dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="6dp"
-                app:cardBackgroundColor="@color/colorPrimary"
-                tools:ignore="UnusedAttribute">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageButton
-                        android:id="@+id/btn14"
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="105dp"
                         android:src="@mipmap/m116"
                         android:scaleType="fitXY"
                         tools:ignore="ContentDescription" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="M-116"
+                        android:text="@string/m_116"
                         android:gravity="center"
                         android:textSize="15sp"
                         android:textStyle="bold"

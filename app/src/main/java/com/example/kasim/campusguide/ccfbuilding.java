@@ -12,7 +12,6 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Timer;
-
 import me.relex.circleindicator.CircleIndicator;
 
 public class ccfbuilding extends Fragment {
@@ -50,7 +49,6 @@ public class ccfbuilding extends Fragment {
             }
         };
         Timer swipeTimer = new Timer();
-
 
         btng = myView.findViewById(R.id.ground);
         btn1 = myView.findViewById(R.id.first);

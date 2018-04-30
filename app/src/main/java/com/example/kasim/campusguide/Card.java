@@ -21,7 +21,6 @@ public class Card {
         this.name = name;
     }
 
-
     public int getThumbnail() {
         return thumbnail;
     }

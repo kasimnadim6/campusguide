@@ -12,7 +12,6 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Timer;
-
 import me.relex.circleindicator.CircleIndicator;
 
 public class mainbuilding extends Fragment {
@@ -107,7 +106,6 @@ public class mainbuilding extends Fragment {
                 startActivity(i);
             }
         });
-
 
         return myView;
     }

@@ -71,21 +71,22 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new FragmentHome())
                     .commit();
-        } else if (id == R.id.nav_floors) {
+        }
+        else if (id == R.id.nav_floors) {
             Intent intent = new Intent(MainActivity.this,fragment.class);
             intent.putExtra("block",1);
             startActivity(intent);
-        }  else if (id == R.id.nav_explore) {
+        }
+        else if (id == R.id.nav_explore) {
             Intent intent = new Intent(MainActivity.this,MapsActivity.class);
             startActivity(intent);
-        }else if (id == R.id.nav_share) {
+        }
+        else if (id == R.id.nav_share) {
             Intent i = new Intent(Intent.ACTION_SEND);
             i.setType("text/plain");
-            i.putExtra(
-                    android.content.Intent.EXTRA_TEXT, "Thisis just a text...add link of your app it will goto playstore");
+            i.putExtra(android.content.Intent.EXTRA_TEXT,
+                    "Thisis just a text...add link of your app it will goto playstore");
             startActivity(Intent.createChooser(i, "Share via"));
-        } else if (id == R.id.nav_manage) {
-
         }
 
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);

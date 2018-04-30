@@ -6,12 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class tfloor extends Fragment implements View.OnClickListener {
 
-    ImageButton room1,room2,room3,room4,room5,room7,room8,room9,room10,room11;
+    ImageButton room1,room2,room3,room4,room5,room7,room8,room9,room10,room11,room12;
     View myView;
     PDFView pdfView;
 
@@ -51,6 +50,9 @@ public class tfloor extends Fragment implements View.OnClickListener {
 
         room11 = myView.findViewById(R.id.btn11);
         room11.setOnClickListener(this);
+
+        room12 = myView.findViewById(R.id.btn12);
+        room12.setOnClickListener(this);
         return myView;
     }
 
@@ -73,19 +75,22 @@ public class tfloor extends Fragment implements View.OnClickListener {
                 pdfView.fromAsset("m306.pdf").load();
                 break;
             case R.id.btn7:
-                pdfView.fromAsset("m312.pdf").load();
+                pdfView.fromAsset("m308.pdf").load();
                 break;
             case R.id.btn8:
-                pdfView.fromAsset("m313.pdf").load();
+                pdfView.fromAsset("m309.pdf").load();
                 break;
             case R.id.btn9:
-                pdfView.fromAsset("c005.pdf").load();
+                pdfView.fromAsset("m312.pdf").load();
                 break;
             case R.id.btn10:
-                pdfView.fromAsset("c004.pdf").load();
+                pdfView.fromAsset("m313.pdf").load();
                 break;
             case R.id.btn11:
-                pdfView.fromAsset("c005.pdf").load();
+                pdfView.fromAsset("m314.pdf").load();
+                break;
+            case R.id.btn12:
+                pdfView.fromAsset("m315.pdf").load();
                 break;
         }
     }

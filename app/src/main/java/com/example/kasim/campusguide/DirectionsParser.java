@@ -10,11 +10,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-
 public class DirectionsParser {
-    /**
-     * Returns a list of lists containing latitude and longitude from a JSONObject
-     */
+
     public List<List<HashMap<String, String>>> parse(JSONObject jObject) {
 
         List<List<HashMap<String, String>>> routes = new ArrayList<List<HashMap<String, String>>>();
@@ -25,7 +22,6 @@ public class DirectionsParser {
         try {
 
             jRoutes = jObject.getJSONArray("routes");
-
             // Loop for all routes
             for (int i = 0; i < jRoutes.length(); i++) {
                 jLegs = ((JSONObject) jRoutes.get(i)).getJSONArray("legs");
@@ -95,7 +91,6 @@ public class DirectionsParser {
                     (((double) lng / 1E5)));
             poly.add(p);
         }
-
         return poly;
     }
 }

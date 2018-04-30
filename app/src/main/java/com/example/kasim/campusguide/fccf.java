@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class fccf extends Fragment implements View.OnClickListener {
@@ -29,7 +28,6 @@ public class fccf extends Fragment implements View.OnClickListener {
         btn2.setOnClickListener(this);
         return myView;
     }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

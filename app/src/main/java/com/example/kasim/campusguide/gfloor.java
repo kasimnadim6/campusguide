@@ -1,21 +1,12 @@
 package com.example.kasim.campusguide;
 
 import android.app.Fragment;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.Toast;
-
 import com.github.barteksc.pdfviewer.PDFView;
-import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
 public class gfloor extends Fragment implements View.OnClickListener {
 
@@ -67,7 +58,7 @@ public class gfloor extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn1:
-                pdfView.fromAsset("m003.pdf")/*.enableDoubletap(true)
+                pdfView.fromAsset("m001.pdf")/*.enableDoubletap(true)
                            .scrollHandle(new DefaultScrollHandle(getContext(),true))*/
                         .load();
                 break;
@@ -90,7 +81,7 @@ public class gfloor extends Fragment implements View.OnClickListener {
                  pdfView.fromAsset("m012.pdf").load();
                  break;
             case R.id.btn13:
-                 pdfView.fromAsset("m004.pdf").load();
+                 pdfView.fromAsset("m013.pdf").load();
                  break;
             case R.id.btn15:
                  pdfView.fromAsset("m015.pdf").load();
