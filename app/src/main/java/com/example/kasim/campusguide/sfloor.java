@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class sfloor extends Fragment implements View.OnClickListener {
@@ -50,6 +49,7 @@ public class sfloor extends Fragment implements View.OnClickListener {
 
         room11 = myView.findViewById(R.id.btn11);
         room11.setOnClickListener(this);
+
         return myView;
     }
 
@@ -81,7 +81,7 @@ public class sfloor extends Fragment implements View.OnClickListener {
                 pdfView.fromAsset("m213.pdf").load();
                 break;
             case R.id.btn10:
-                pdfView.fromAsset("m214pdf").load();
+                pdfView.fromAsset("m214.pdf").load();
                 break;
             case R.id.btn11:
                 pdfView.fromAsset("m215.pdf").load();

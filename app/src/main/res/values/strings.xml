@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="splash_name">SDMIT\nCAMPUS GUIDE</string>
+    <string name="splash_name">CAMPUS GUIDE</string>
     <string name="todo">TODO</string>
     <string name="exit">Exit</string>
     <string name="ground_floor">GROUND FLOOR</string>
@@ -82,4 +82,21 @@
     <string name="c_202">C-202</string>
     <string name="m_209">M-209</string>
     <string name="m_308">M-308</string>
+    <string name="civil_dept">Civil Dept</string>
+    <string name="ladies_room">LADIES ROOM</string>
+    <string name="m_210">M-210</string>
+    <string name="s_d_m_institute_of_technology">S.D.M Institute Of Technology</string>
+    <string name="m_201">M-201</string>
+    <string name="m_203">M-203</string>
+    <string name="m_204">M-204</string>
+    <string name="m_205">M-205</string>
+    <string name="m_206">M-206</string>
+    <string name="m_207">M-207</string>
+    <string name="m_211">M-211</string>
+    <string name="m_213">M-213</string>
+    <string name="m_214">M-214</string>
+    <string name="m_215">M-215</string>
+    <string name="traning">TRANING</string>
+    <string name="m_216">M-216</string>
+    <string name="main_seminar">MAIN SEMINAL</string>
 </resources>

@@ -10,7 +10,7 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 public class topfloor extends Fragment implements View.OnClickListener {
 
-    ImageButton room1,room2,room3,room4,room5,room7,room8,room9,room10,room11,room12,room14;
+    ImageButton room1,room2,room3,room4,room5,room7,room8,room9,room10,room11,room12,room14,room15;
     View myView;
     PDFView pdfView;
     @Override
@@ -55,6 +55,8 @@ public class topfloor extends Fragment implements View.OnClickListener {
 
         room14 = myView.findViewById(R.id.btn14);
         room14.setOnClickListener(this);
+        room15 = myView.findViewById(R.id.btn15);
+        room15.setOnClickListener(this);
 
         return myView;
     }
@@ -97,6 +99,9 @@ public class topfloor extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn14:
                 pdfView.fromAsset("selco.pdf").load();
+                break;
+            case R.id.btn15:
+                pdfView.fromAsset("kp.pdf").load();
                 break;
         }
     }

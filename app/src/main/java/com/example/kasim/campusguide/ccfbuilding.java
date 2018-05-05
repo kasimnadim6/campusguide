@@ -80,7 +80,6 @@ public class ccfbuilding extends Fragment {
                 startActivity(i);
             }
         });
-
         return myView;
     }
 }
