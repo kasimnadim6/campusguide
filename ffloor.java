@@ -1,4 +1,4 @@
-package com.example.kasim.campusguide;
+package com.sdmit.kasim.campusguide;
 
 import android.content.Context;
 import android.net.Uri;

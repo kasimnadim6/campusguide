@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/viewBg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.kasim.campusguide.MainActivity"
+    tools:context="com.sdmit.kasim.campusguide.MainActivity"
     tools:showIn="@layout/frag_home">
 
     <android.support.v7.widget.RecyclerView
