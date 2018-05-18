@@ -1,7 +1,10 @@
 package com.sdmit.kasim.campusguide;
 
+import android.app.Dialog;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -11,11 +14,14 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    Dialog myDialog;
     private long backPressedTime;
     private Toast backToast;
 
@@ -23,6 +29,8 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        myDialog = new Dialog(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
@@ -85,12 +93,24 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(Intent.ACTION_SEND);
             i.setType("text/plain");
             i.putExtra(android.content.Intent.EXTRA_TEXT,
-                    "Thisis just a text...add link of your app it will goto playstore");
+                    "Hi!This is SDMIT Campus guide." +
+                            "i recommend you to download it and enjoy,if you are visiting sdmit." +
+                            ":https://play.google.com/store/apps/details?id=com.sdmit.kasim.campusguide");
             startActivity(Intent.createChooser(i, "Share via"));
+        }
+        else if(id == R.id.about){
+            Intent intent = new Intent(MainActivity.this,MapsActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void ShowPopup(MenuItem item) {
+        myDialog.setContentView(R.layout.developer_details);
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
     }
 }

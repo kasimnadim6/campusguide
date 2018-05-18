@@ -1,8 +1,11 @@
 package com.sdmit.kasim.campusguide;
 
+import android.app.Dialog;
 import android.app.Fragment;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.Rect;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -13,6 +16,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
+
 import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +32,7 @@ public class FragmentHome extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.frag_home, container, false);
+
 
         RecyclerView recyclerView = myView.findViewById(R.id.recycler_view);
 
@@ -48,6 +54,7 @@ public class FragmentHome extends Fragment {
 
         return myView;
     }
+
 
     private void prepareAlbums() {
         int[] covers = new int[]{
